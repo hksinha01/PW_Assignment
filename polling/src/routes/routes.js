@@ -1,7 +1,6 @@
 const express = require("express")
 const router = express.Router();
 const questionController = require("../controller/questionController")
-//const optionController = require("../controller/optionController")
 
 router.post("/create",questionController.create)
 router.delete("/questions/:id/delete",questionController.deleteQuestion)
